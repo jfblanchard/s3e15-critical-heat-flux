@@ -11,7 +11,16 @@ There is a similar paper [here](https://www.sciencedirect.com/science/article/ab
 * RF: 100 trees/estimators, 50%-70% features in each individual tree, no regularization.
 * 10 fold cross validation
 
-### Details
+### Data
+
+Dataset has 31644 samples and 10 features, x_e_out is the target:
+
+![data](https://github.com/jfblanchard/s3e15-critical-heat-flux/blob/main/images/s3e15%20data.JPG)
+
+### Metric
+* Root Mean Squared Error (RMSE)
+
+### Model
 The notebook file in this repo uses XGB for imputation, then a weighted blend of 3 regression models
 *   Catboost
 *   RF
